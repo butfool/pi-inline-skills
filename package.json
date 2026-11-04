@@ -1,0 +1,53 @@
+{
+  "name": "@butcool/pi-inline-skills",
+  "version": "1.0.0",
+  "description": "Invoke Pi skills anywhere in a prompt with $name or /skill:name.",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "pi",
+    "skills",
+    "autocomplete"
+  ],
+  "homepage": "https://github.com/butfool/pi-inline-skills#readme",
+  "bugs": "https://github.com/butfool/pi-inline-skills/issues",
+  "license": "MIT",
+  "author": "butfool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butfool/pi-inline-skills.git"
+  },
+  "files": [
+    "index.ts",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-coding-agent": "^1.5.0",
+    "@earendil-works/pi-tui": "^1.5.0",
+    "@types/node": "^24",
+    "jiti": "^2.7.0",
+    "typescript": "7.0.2"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "test": "node tests/run.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "pi": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
