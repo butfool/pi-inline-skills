@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.1] - 2026-11-04
+
+- Publish through npm trusted publishing, so the release carries a provenance statement.
+
 ## [1.0.0] - 2026-11-03
 
 First release.
